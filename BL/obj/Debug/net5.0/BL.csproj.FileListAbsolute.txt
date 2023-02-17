@@ -1,0 +1,17 @@
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\bin\Debug\net5.0\BL.deps.json
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\bin\Debug\net5.0\BL.dll
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\bin\Debug\net5.0\BL.pdb
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\bin\Debug\net5.0\DAL.dll
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\bin\Debug\net5.0\Domain.dll
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\bin\Debug\net5.0\DAL.pdb
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\bin\Debug\net5.0\Domain.pdb
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.csproj.AssemblyReference.cache
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.AssemblyInfoInputs.cache
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.AssemblyInfo.cs
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.csproj.CopyComplete
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.dll
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\ref\BL.dll
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\BL.pdb
+C:\Users\woute\OneDrive\Documenten\KDG_2\Programeren .NET\ProjectBakery\BL\obj\Debug\net5.0\refint\BL.dll
