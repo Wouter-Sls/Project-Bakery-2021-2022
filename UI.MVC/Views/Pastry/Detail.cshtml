@@ -1,0 +1,80 @@
+﻿@model ProjectBakery.Domain.Pastrie
+
+@{
+    ViewData["Title"] = "Pastry Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="mb-4">
+    
+    <tr>
+        <th class="col-sm-4 text-left">Name </th>
+        <td class="col-sm-8 text left">@Model.Name</td>
+    </tr>
+    <tr>
+        <th class="col-sm-4 text-left">Price </th>
+        <td class="col-sm-8 text left">@Model.Price</td>
+    </tr>
+    <tr>
+        <th class="col-sm-4 text-left">Quantity </th>
+        <td class="col-sm-8 text left">@Model.Quantity</td>
+    </tr>
+    <tr>
+        <th class="col-sm-4 text-left">Type </th>
+        <td class="col-sm-8 text left">@Model.Type</td>
+    </tr>
+</table>
+
+<h2>Bakeries</h2>
+
+<table class="table">
+    <tr style="background-color: #977D6A">
+        <th>Name</th>
+        <th>Location</th>
+        <th>Employees</th>
+        <th></th>
+    </tr>
+    
+    @foreach (var stock in Model.StockProducts)
+        {
+            <tr>
+                <td>
+                    @if (stock.Bakerie.Name == null)
+                    {
+                        <p>free</p>
+                    }
+                    else
+                    {
+                        @stock.Bakerie.Name
+                    }
+                </td>
+                <td>
+                     @if (stock.Bakerie.Location == null)
+                     {
+                         <p>free</p>
+                     }
+                     else
+                     {
+                         @stock.Bakerie.Location
+                             
+                     }
+                </td>
+                <td>
+                    @if (stock.Bakerie.Employees.ToString().Equals(null))
+                    {
+                        <p>free</p>
+                    }
+                    else
+                    {
+                        @stock.Bakerie.Employees
+                    }
+                </td>
+                <td>
+                    <a class="nav-link" asp-area="" asp-controller="Pastry" asp-action="DetailBakery" asp-route-id="@stock.Bakerie.Id" method="post">Details</a>
+                </td>
+        </tr>
+        }
+</table>
+
+

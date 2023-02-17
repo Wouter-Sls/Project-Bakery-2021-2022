@@ -1,0 +1,26 @@
+﻿### get all bakers
+GET https://localhost:5001/api/Bakers
+Accept: application/json
+
+### add
+
+POST https://localhost:5001/api/Bakers HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{"name": "Arthur", "income":2000, "birthDate":"1984-11-05"}
+
+### succes 
+PUT https://localhost:5001/api/Bakers/1 HTTP/1.1
+Content-Type: application/json
+
+{"id": 1, "name": "Bert", "birthDate":  "2002-01-03", "income": 2200}
+
+### fail
+
+PUT https://localhost:5001/api/Bakers/1 HTTP/1.1
+Content-Type: application/json
+
+{"id": 2, "name": "Bert", "birthDate":  "2002-01-03", "income": 2200}
+
+

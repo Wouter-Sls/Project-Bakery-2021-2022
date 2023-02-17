@@ -1,0 +1,29 @@
+﻿@model ProjectBakery.Domain.Baker
+
+@{
+    ViewData["Title"] = "All Bakers";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+    <tr style="background-color: #977D6A">
+    <th>Name</th>
+    <th>Birthdate</th>
+    <th>Income</th>
+    <th></th>
+    </tr>
+    </thead>
+    <tbody id="bakerTableBody">
+    </tbody>
+</table>
+
+<div>
+<button class="btn btn-primary" id="loadBakers">Refresh bakers list</button>
+</div>
+
+@section Scripts
+{
+    <script src="/js/Bakers/Index.js" defer></script>
+}

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ProjectBakery.Domain.Pastrie>
+
+@{
+    ViewData["Title"] = "All Pastries";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table" id="table">
+    <tr style="background-color:#977D6A">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Type</th>
+        <th></th>
+    </tr>
+
+    @foreach (var pastry in Model){
+        <tr>
+            <td>
+                @if (pastry.Name == null){
+                    <p>free</p>
+                }else
+                {
+                    @pastry.Name
+                }
+            </td>
+            <td>€
+                @if (pastry.Price.Equals(null))
+                {
+                    <p>free</p>
+                }else
+                {
+                    @pastry.Price
+                }
+            </td>
+            <td>
+                @if (pastry.Quantity.Equals(null))
+                {
+                    <p>free</p>
+                }else
+                {
+                    @pastry.Quantity
+                }
+            </td>
+            <td>
+                @if (pastry.Type.Equals(null)){
+                    <p>free</p>
+                }else
+                {
+                    @pastry.Type.ToString()
+                }
+            </td>
+            <td>
+                <a class="nav-link" asp-area="" asp-controller="Pastry" asp-action="Detail" asp-route-id="@pastry.Id" method="post">Details</a></td>
+        </tr>
+    }
+</table>
+
+    
+
+
+
+
+
+
+

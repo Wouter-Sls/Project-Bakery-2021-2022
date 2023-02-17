@@ -1,0 +1,46 @@
+﻿@model ProjectBakery.Domain.Bakery
+
+@{
+    ViewData["Title"] = "Bakery Detail";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="mb-4">
+    <tr>
+        <th class="col-sm-4 text-left">Name</th>
+        <td class="col-sm-8 text left">@Model.Name</td>
+    </tr>
+    <tr>
+        <th class="col-sm-4 text left">Location</th>
+        <td class="col-sm-8 text left">@Model.Location</td>
+    </tr>
+    <tr>
+        <th class="col-sm-4 text left"># Employees</th>
+        <td class="col-sm-8 text left">@Model.Employees</td>
+    </tr>
+</table>
+
+<h2>Pastries</h2>
+
+<table class="table mb-4">
+    <thead style="background-color: #977D6A">
+    <th>Name</th>
+    <th>Price/unit</th>
+    <th>Quantity</th>
+    <th>Type</th>
+    </thead>
+    <tbody id="pastriesTableBody">
+    </tbody>
+</table>
+
+<h2>Add Pastry</h2>
+
+<form id="addPastrie">
+    
+</form>
+
+@section Scripts
+{
+    <script src="/js/Bakery/Detail.js" defer></script>
+}
